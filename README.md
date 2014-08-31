@@ -1,4 +1,4 @@
-float
+Float
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -19,15 +19,24 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 To use the module,
 
 ``` javascript
-var lib = require( 'validate.io-float' );
+var isFloat = require( 'validate.io-float' );
+
+console.log( isFloat( 5.256 ) );
+// Returns true
+
+console.log( isFloat( 5 ) );
+// Returns false
 ```
+
+
+## Notes
+
+* 	This method first validates that a `value` is a `number` prior to validating if the `value` is a `float`.
+
+* 	In JavaScript, every numeric value is stored as a `float`. Here, we make a distinction based on whether the value has digits located after a decimal point. Hence, the distinction is semantic and not indicative of the underlying representation. 
 
 
 ## Examples
-
-``` javascript
-var lib = require( 'validate.io-float' );
-```
 
 To run the example code from the top-level application directory,
 
