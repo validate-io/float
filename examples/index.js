@@ -1,7 +1,9 @@
+'use strict';
+
 var isFloat = require( './../lib' );
 
 console.log( isFloat( 5.256 ) );
-// Returns true
+// returns true
 
 console.log( isFloat( 5 ) );
-// Returns false
+// returns false
