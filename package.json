@@ -32,7 +32,9 @@
     "decimal",
     "is",
     "isfloat",
-    "isdecimal"
+    "isdecimal",
+    "type",
+    "check"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/float/issues"
