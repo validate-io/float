@@ -29,7 +29,10 @@
     "validator",
     "number",
     "float",
-    "decimal"
+    "decimal",
+    "is",
+    "isfloat",
+    "isdecimal"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/float/issues"
